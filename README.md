@@ -23,21 +23,25 @@ Pronto!!!
 Agora com o ambiente configurado basta baixar esse repositorio e desenvolver a sua aplicação.
 
 ## Pacotes Instalados
-- Express, nodemon e Cors.
+- Express, nodemon, Knex, sqlite3 e o CORS.
 
-### Observações
-Esse projeto já popssui o nodemon instalado.
+* ***Express*** é um framework para aplicativo da web do Node.js mínimo e flexível que fornece um conjunto robusto de recursos para aplicativos web e móvel.
 
-- O Nodemon é um utilitário que monitora qualquer alteração na sua fonte e reinicia automaticamente o servidor. Perfeito para o desenvolvimento. Instale-o usando o "npm install nodemon -D".
+* ***Nodemon*** é um utilitário que monitora qualquer alteração na sua fonte e reinicia automaticamente o servidor. Perfeito para a fase de desenvolvimento.
 
-- Todo paccote instalado usando o '-D' é um pacote classificado como *devDependencies* e não sera utilizado quando fizer o deploy para produção.
+Não se preocupe com ele.
 
-- E para facilitar o seu uso, abra o _package.json_ e insira dentro da chave *scripts* **"start": "nodemon index.js"**
+* ***Knex*** realiza a integração com banco de dados deixando uma estrutura flexivel e que é compativel com qualquer bancorelacional, basta instalar seu pacote via npm.
 
-"scripts": {<br/>
-     "start": "nodemon index.js"<br/>
- }
-  
-Após isso basta dentro da raiz do projeto executar o comando *npm start* ou *yarn start* caso utilize o yarn como gerenciador de pacotes.
+$ npm install pg
+$ npm install sqlite3
+$ npm install mysql
+$ npm install mysql2
+$ npm install oracledb
+$ npm install mssql
 
-E o seu servidor a cada alteração no projeto salva ele reiniciara e já estara com as atualizações funcionando.
+Nesse projeto foi utilizado o sqlite.
+
+* ***CORS*** permite que os servidores especifiquem não apenas quem pode acessar seus ativos, mas também como eles podem ser acessados.
+
+Basicamente serve para restringir quem tera acesso ou não a sua aplicação.
