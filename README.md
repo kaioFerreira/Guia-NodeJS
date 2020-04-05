@@ -1,5 +1,5 @@
 # Um modelo de projeto NodeJS
-Repositório voltado para ensinar e disponibilizar um projeto NodeJS pronto para iniciar o desenvolvimento!
+Repositório voltado para ensinar e disponibilizar um projeto NodeJS pronto para iniciar o desenvolvimento!<br/>
 Que possui uma estrutura de pastas bem definida e integração com banco entre entras configurações.
 
 ## Preparando o Ambiente
