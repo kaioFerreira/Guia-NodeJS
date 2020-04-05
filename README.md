@@ -1,6 +1,6 @@
 # Um modelo de projeto NodeJS
 Repositório voltado para ensinar e disponibilizar um projeto NodeJS pronto para iniciar o desenvolvimento!
-
+Que possui uma estrutura de pastas bem definida e integração com banco entre entras configurações.
 
 ## Preparando o Ambiente
 Para iniar o desenvolvimento em NodeJS é nescessario tem o pacote node em sua maquina.
