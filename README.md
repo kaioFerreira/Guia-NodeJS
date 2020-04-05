@@ -17,7 +17,9 @@ O Nodemon é um utilitário que monitora qualquer alteração na sua fonte e rei
 E para facilitar o seu uso, abra o _package.json_ e insira dentro da chave *scripts* **"start": "nodemon index.js"**
 
 ***"scripts": {
+
     "start": "nodemon index.js"
+    
   },***
   
 Após isso basta dentro da raiz do projeto executar o comando *npm start* ou *yarn start* caso utilize o yarn como gerenciador de pacotes.
