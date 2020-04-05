@@ -1,7 +1,7 @@
 const express = require('express');
+const RegistroControler = require('./controllers/RegistroController');
 
 const routes = express.Router();
-
 
 /**
  * Rota / Recurso
@@ -26,39 +26,23 @@ const routes = express.Router();
  *  Query: Parámetros nomeados e enviados na rota após "?" (Filtros, paginação)
  * 
  *  /users?nome=Kaio&idade=55
+ *  const { nome , idade } = request.query;
  */
-
-routes.get('/users',(request,response)=>{
-    const { nome , idade } = request.query;
-    return response.json({
-      nome,
-      idade
-    });
-});
 
 /**
  * Route: Parametros utilizados para identificar recursos
  * 
  * /users/50
+ * const { id } = request.params;
 */
-
-routes.get('/users/:id',(request,response)=>{
-  const { id } = request.params;
-  return response.json({
-    id
-  });
-});
 
 /**
  * Request Body: Corpo da requisição, utilizado para criar ou alterar recursos
+ * const { nome, idade } = request.body;
 */
 
-routes.post('/users',(request,response)=>{
-  const { nome, idade } = request.body;
-  return response.json({
-    nome,
-    idade
-  });
-});
+
+routes.get('/registros', RegistroControler.index);
+routes.post('/registros', RegistroControler.store);
 
 module.exports = routes;
