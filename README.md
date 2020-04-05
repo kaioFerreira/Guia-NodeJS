@@ -8,7 +8,7 @@ Para iniar o desenvolvimento em NodeJS é nescessario tem o packout node em sua 
 Ele pode ser encontrado em [NodeJS](https://nodejs.org/en/).
 
 ## Observações
-Esse projeto já popssui o nedemon instalado.
+Esse projeto já popssui o nodemon instalado.
 
 - O Nodemon é um utilitário que monitora qualquer alteração na sua fonte e reinicia automaticamente o servidor. Perfeito para o desenvolvimento. Instale-o usando o "npm install nodemon -D".
 
@@ -16,10 +16,8 @@ Esse projeto já popssui o nedemon instalado.
 
 - E para facilitar o seu uso, abra o _package.json_ e insira dentro da chave *scripts* **"start": "nodemon index.js"**
 
-"scripts": {  
-
-    "start": "nodemon index.js"  
-    
+"scripts": {<br/>
+    "start": "nodemon index.js"<br/>
  }
   
 Após isso basta dentro da raiz do projeto executar o comando *npm start* ou *yarn start* caso utilize o yarn como gerenciador de pacotes.
