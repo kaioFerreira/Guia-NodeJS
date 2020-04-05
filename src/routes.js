@@ -41,7 +41,6 @@ const routes = express.Router();
  * const { nome, idade } = request.body;
 */
 
-
 routes.get('/registros', RegistroControler.index);
 routes.post('/registros', RegistroControler.store);
 
